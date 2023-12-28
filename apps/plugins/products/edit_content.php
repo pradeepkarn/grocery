@@ -91,14 +91,15 @@ $plugin_dir = "products";
                     $dic_per_blk = $page['discount_amt']*$page['bulk_qty'];
                     $sale_per_blk = $price_per_blk-$dic_per_blk;
                     $sale_per_blk = $sale_per_blk+round($sale_per_blk*($page['tax']/100),2);
+                    $unit = getUnitText($page['qty_unit']);
                     ?>
                     <div class="row">
                         <div class="col-md-6">
-                        <b>Price/Bulk <?php echo getUnitText($page['qty_unit']); ?></b>
+                        <b>Price/Bulk <?php echo "({$unit})"; ?></b>
                             <input type="text" name="price_bulk_qty" class="form-control mb-2 update_page" value="<?php echo $price_per_blk; ?>">
                         </div>
                         <div class="col-md-6">
-                        <b>Disc. Amt./Bulk <?php echo getUnitText($page['qty_unit']); ?></b>
+                        <b>Disc. Amt./Bulk <?php echo "({$unit})"; ?></b>
                             <input type="text" name="discount_amt" class="form-control mb-2 update_page" value="<?php echo $dic_per_blk; ?>">
                         </div> 
                         <div class="col-md-6">
@@ -110,7 +111,7 @@ $plugin_dir = "products";
                             <b>= <?php echo $sale_per_blk; ?></b>
                         </div> 
                         <div class="col-md-6">
-                        <b>Bulk <?php echo getUnitText($page['qty_unit']); ?> to sell</b>
+                        <b>Bulk <?php echo "({$unit})"; ?> to sell</b>
                         <input type="text" name="bulk_qty" class="form-control mb-2 update_page" value="<?php echo $page['bulk_qty']; ?>">
                         </div>    
                           
