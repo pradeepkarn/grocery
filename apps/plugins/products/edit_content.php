@@ -136,7 +136,7 @@ $plugin_dir = "products";
                 <!-- <a data-bs-toggle="modal" data-bs-target="#GalleryModel">Add Image</a> -->
                 
                     <h4>Details <i class="fas fa-arrow-down"></i></h4>
-                    <textarea name="page_content" class="tiny_textarea form-control mb-2 update_page" rows="10"><?php echo $page['content']; ?></textarea>
+                    <textarea name="page_content" class="form-control mb-2 update_page" rows="10"><?php echo $page['content']; ?></textarea>
                     <!-- <h4>Content in English <i class="fas fa-arrow-down"></i></h4>
                     <textarea name="page_other_content" class="tiny_textarea form-control mb-2 update_page" rows="10"><?php //echo $page['other_content']; ?></textarea> -->
                     <input type="text" onkeyup="createSlug('page_slug_edit', 'page_slug_edit');" id="page_slug_edit" name="slug" class="form-control mb-2 update_page" value="<?php echo $page['slug']; ?>">

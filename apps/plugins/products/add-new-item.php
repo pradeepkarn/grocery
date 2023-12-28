@@ -100,7 +100,7 @@ $plugin_dir = "products";
                     </div>
                     </div>
                     <h5>Details <i class="fas fa-arrow-down"></i></h5>
-                    <textarea name="content" class="tiny_textarea form-control mb-2 update_page" rows="10"></textarea>
+                    <textarea name="content" class="form-control mb-2 update_page" rows="10"></textarea>
                     
                     
                     <div class="d-grid mb-5">
