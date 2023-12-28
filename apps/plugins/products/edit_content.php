@@ -276,9 +276,9 @@ $plugin_dir = "products";
                                             <div class="col">
                                                 <img style="width: 50px; height: 50px; object-fit: cover;" src="/<?php echo media_root; ?>/images/pages/<?php echo $fvl['content']; ?>" alt="">
                                             </div>
-                                            <div class="col my-auto">
-                                                <?php echo $fvl['color']; ?>
-                                            </div>
+                                            <!-- <div class="col my-auto">
+                                                <?php //echo $fvl['color']; ?>
+                                            </div> -->
                                             <div class="col text-end my-auto text-danger">
                                                 <i id="delete-this-img<?php echo $fvl['id']; ?>" class="fas fa-trash pk-pointer"></i>
                                                 <input class="delete-data<?php echo $fvl['id']; ?>" type="hidden" name="content_details_delete_id" value="<?php echo $fvl['id']; ?>">
