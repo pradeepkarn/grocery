@@ -67,7 +67,7 @@ $plugin_dir = "products";
                                         </div>
                                         <div class="col-6">
                                             <b>Unit</b>
-                                            <select name="qty_unit" class="form-control">
+                                            <select name="qty_unit" class="form-control update_page">
                                                 <?php foreach (UNITS as $key => $unit) : ?>
                                                     <option <?php echo $key == 2 ? 'selected' : null; ?> value="<?= $key; ?>"><?= $unit; ?></option>
                                                 <?php endforeach; ?>

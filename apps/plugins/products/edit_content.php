@@ -120,7 +120,7 @@ $page = $page->pk($GLOBALS['url_last_param']);
                                     </div>
                                     <div class="col-6">
                                         <b>Unit</b>
-                                        <select name="qty_unit" class="form-control">
+                                        <select name="qty_unit" class="form-control update_page">
                                             <?php foreach (UNITS as $key => $unit) : ?>
                                                 <option <?php echo $page['qty_unit'] == $key ? 'selected' : null; ?> value="<?= $key; ?>"><?= $unit; ?></option>
                                             <?php endforeach; ?>
