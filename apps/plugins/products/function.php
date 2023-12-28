@@ -70,6 +70,9 @@ function updatePage()
         if (isset($_POST['qty'])) {
             $db->insertData['qty'] = sanitize_remove_tags($_POST['qty']);
         }
+        if (isset($_POST['qty_unit'])) {
+            $db->insertData['qty_unit'] = intval($_POST['qty_unit']);
+        }
         // if (isset($_POST['bulk_qty'])) {
         //     $db->insertData['bulk_qty'] = sanitize_remove_tags($_POST['bulk_qty']);
         //     if ($_POST['bulk_qty']==0 || $_POST['bulk_qty']==null) {
@@ -163,6 +166,9 @@ function addContent($type="product")
         // }
         if (isset($_POST['qty'])) {
             $db->insertData['qty'] = sanitize_remove_tags($_POST['qty']);
+        }
+        if (isset($_POST['qty_unit'])) {
+            $db->insertData['qty_unit'] = intval($_POST['qty_unit']);
         }
         // if (isset($_POST['bulk_qty'])) {
         //     $db->insertData['bulk_qty'] = sanitize_remove_tags($_POST['bulk_qty']);
