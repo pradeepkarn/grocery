@@ -301,13 +301,16 @@ $plugin_dir = "products";
                             <input accept=".jpg,.png,.jpeg" type="file" name="add_more_img" class="form-control">
                             <label for="">Image color *</label>
                             <div id="more-img-with_clr"></div>
-                            <select name="image_color" id="" class="form-select my-2">
+                            <!-- <select name="image_color" id="" class="form-select my-2">
                                 <option value="">Select color</option>
-                                <?php $cls = json_decode($page['color_list'],true);
+                                <?php 
+                                /*$cls = json_decode($page['color_list'],true);
                                     foreach ($cls as $cl): ?>
                                     <option value="<?php echo $cl ?>"><?php echo $cl ?></option>
-                                <?php endforeach; ?>
-                            </select>
+                                <?php endforeach; 
+                                */
+                                ?>
+                            </select> -->
                             </form>
                             <button id="add-more-img-btn" class="btn btn-primary btn-sm my-1">Add More Image</button>
                             <?php pkAjax_form("#add-more-img-btn","#add-more-img-form","#more-img-with_clr","click",true) ?>
