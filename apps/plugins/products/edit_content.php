@@ -104,6 +104,7 @@ $page = $page->pk($GLOBALS['url_last_param']);
 
                     </div> -->
                                 </div>
+
                                 <?php
                                 $price_per_blk = $page['price'] * $page['bulk_qty'];
                                 $dic_per_blk = $page['discount_amt'] * $page['bulk_qty'];
@@ -111,6 +112,22 @@ $page = $page->pk($GLOBALS['url_last_param']);
                                 $sale_per_blk = $sale_per_blk + round($sale_per_blk * ($page['tax'] / 100), 2);
                                 $unit = getUnitText($page['qty_unit']);
                                 ?>
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <b>Stock Qty</b>
+                                        <input type="text" name="qty" class="form-control mb-2 update_page" value="<?php echo $page['qty']; ?>">
+                                    </div>
+                                    <div class="col-6">
+                                        <b>Unit</b>
+                                        <select name="qty_unit" class="form-control">
+                                            <?php foreach (UNITS as $key => $unit) : ?>
+                                                <option <?php echo $page['qty_unit'] == $key ? 'selected' : null; ?> value="<?= $key; ?>"><?= $unit; ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+
+                                </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <b>Price/Bulk <?php echo "({$unit})"; ?></b>
@@ -134,22 +151,7 @@ $page = $page->pk($GLOBALS['url_last_param']);
                                     </div>
 
                                 </div>
-                                <div class="row">
 
-                                    <div class="col-6">
-                                        <b>Stock Qty</b>
-                                        <input type="text" name="qty" class="form-control mb-2 update_page" value="<?php echo $page['qty']; ?>">
-                                    </div>
-                                    <div class="col-6">
-                                        <b>Unit</b>
-                                        <select name="qty_unit" class="form-control">
-                                            <?php foreach (UNITS as $key => $unit) : ?>
-                                                <option <?php echo $page['qty_unit'] == $key ? 'selected' : null; ?> value="<?= $key; ?>"><?= $unit; ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </div>
-
-                                </div>
 
                                 <!-- <h5>Title in English </h5>
                     <input type="text" name="page_content_info" class="form-control mb-2 update_page" value="<?php //echo $page['content_info']; 
@@ -390,7 +392,7 @@ $page = $page->pk($GLOBALS['url_last_param']);
                         //    <input style="height: 20px; width: 20px;" type="radio" <?php //echo $page['grouped_content']==$grpv['id']?'checked':''; 
                                                                                         ?> class="update_page" name="grouped_content" value="<?php //echo $grpv['id']; 
                                                                                                                                                 ?>"> <?php //echo $grpv['content_group']; 
-                                                                                                                                                                                                                    ?> <br>
+                                                                                                                                                        ?> <br>
                         // <?php
                             // endforeach; 
                             ?>
