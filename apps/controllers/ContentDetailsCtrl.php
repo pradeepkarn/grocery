@@ -32,7 +32,7 @@ class ContentDetailsCtrl{
                     $obj_id = $content_id;
                     $arr['content_id'] = $content_id;
                     $arr['content_group'] = sanitize_remove_tags($_POST['content_group']);
-                    $arr['color'] = sanitize_remove_tags($_POST['image_color']);
+                    $arr['color'] = "NA";
     
                     $file_with_ext = $fl['name'];
                     if (!empty($fl['name'])) {

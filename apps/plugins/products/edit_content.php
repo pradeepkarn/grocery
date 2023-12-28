@@ -230,9 +230,9 @@ $plugin_dir = "products";
                             overflow-y: scroll;
                         }
                     </style>
-                    <h4>Add New Color</h4>
+                    <!-- <h4>Add New Color</h4>
                      <input type="text" name="color" class="form-control mb-2 update_page" placeholder="Write a product color name and update the page">
-                     <h4>Available Colors
+                     <h4>Available Colors -->
 
                      <div id="colr-loading" class="spinner-border text-primary" role="status">
                         <span class="sr-only">Loading...</span>
