@@ -50,10 +50,10 @@ $plugin_dir = "products";
                             <h3 class="text-dark">Brand Name</h3>
                             <input type="text" name="brand" placeholder="Brand Name" class="form-control mb-2">    
                         </div>
-                        <div class="col">
+                        <!-- <div class="col">
                             <h3 class="text-dark">Default Color</h3>
                             <input type="text" name="color" placeholder="Color" class="form-control mb-2">    
-                        </div>
+                        </div> -->
                     </div>     
                     <div class="row">
                         <div class="col">
