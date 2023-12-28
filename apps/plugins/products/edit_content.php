@@ -94,11 +94,11 @@ $plugin_dir = "products";
                     ?>
                     <div class="row">
                         <div class="col">
-                        <b>Price/Bulk Qty.</b>
+                        <b>Price/Bulk <?php echo getUnitText($page['qty_unit']); ?></b>
                             <input type="text" name="price_bulk_qty" class="form-control mb-2 update_page" value="<?php echo $price_per_blk; ?>">
                         </div>
                         <div class="col">
-                        <b>Disc. Amt./Bulk Q.</b>
+                        <b>Disc. Amt./Bulk <?php echo getUnitText($page['qty_unit']); ?></b>
                             <input type="text" name="discount_amt" class="form-control mb-2 update_page" value="<?php echo $dic_per_blk; ?>">
                         </div> 
                         <div class="col">
@@ -110,7 +110,7 @@ $plugin_dir = "products";
                             <b>= <?php echo $sale_per_blk; ?></b>
                         </div> 
                         <div class="col">
-                        <b>Bulk Qty to sell</b>
+                        <b>Bulk <?php echo getUnitText($page['qty_unit']); ?> to sell</b>
                         <input type="text" name="bulk_qty" class="form-control mb-2 update_page" value="<?php echo $page['bulk_qty']; ?>">
                         </div>    
                           

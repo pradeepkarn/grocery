@@ -3,6 +3,7 @@ require_once(__DIR__."/config.php");
 import("/includes/class-autoload.inc.php");
 import("apps/account/function.php");
 import("functions.php");
+import("settings.php");
 $url = explode("/", $_SERVER["QUERY_STRING"]);
 $path = $_SERVER["QUERY_STRING"];
 define("direct_access", 1);

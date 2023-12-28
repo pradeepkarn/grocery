@@ -5,6 +5,15 @@ function myprint($data=null)
   print_r($data);
   echo "</pre>";
 }
+function getUnitText($statusCode)
+{
+  $statusCodes = UNITS;
+  if (array_key_exists($statusCode, $statusCodes)) {
+    return $statusCodes[$statusCode];
+  } else {
+    return null;
+  }
+}
 function pkAjax($button,$url,$data,$response,$event='click',$method="post",$progress=false,$return=false)
 {
   $progress_code = "";
