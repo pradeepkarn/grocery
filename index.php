@@ -60,18 +60,8 @@ import("apps/controllers/UserProfileUpdateCtrl.php");
 //cart count close
 switch ($path) {
     case '':
-      if (authenticate()===false) {
-        header("Location:/".home."/login");
-        return;
-      }else{
-        if ($pass===true) {
-          header("Location:/".home."/admin");
-          return;
-        }else{
-          header("Location:/".home."/logout");
-        }
-      }
-      
+      import("apps/view/screens/home.php");
+      return;
       break;
 
     // case 'contact':
@@ -149,12 +139,32 @@ switch ($path) {
             import("apps/admin/index.php");
             return;
           }
+          if ($url[0] == "about") {
+            import("apps/view/screens/about.php");
+            return;
+          }
           if ($url[0] == "api") {
             import("apps/api/index.php");
             return;
           }
           if ($url[0] == "contact") {
-            import("apps/view/screens/contact.index.php");
+            import("apps/view/screens/contact.php");
+            return;
+          }
+          if ($url[0] == "shop") {
+            import("apps/view/screens/shop.php");
+            return;
+          }
+          if ($url[0] == "vendor-guide") {
+            import("apps/view/screens/vendor-guide.php");
+            return;
+          }
+          if ($url[0] == "purchase-guide") {
+            import("apps/view/screens/purchase-guide.php");
+            return;
+          }
+          if ($url[0] == "shop-wishlist") {
+            import("apps/view/screens/shop-wishlist.php");
             return;
           }
         
