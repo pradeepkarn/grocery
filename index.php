@@ -155,6 +155,10 @@ switch ($path) {
             import("apps/view/screens/shop.php");
             return;
           }
+          if ($url[0] == "shop-product-right") {
+            import("apps/view/screens/shop-product-right.php");
+            return;
+          }
           if ($url[0] == "vendor-guide") {
             import("apps/view/screens/vendor-guide.php");
             return;
