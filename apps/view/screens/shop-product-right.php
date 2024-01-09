@@ -20,6 +20,7 @@ $moreimg = explode(" ", $prod->more_img);
 $price_per_blk = $page['price'] * $page['bulk_qty'];
 $dic_per_blk = $page['discount_amt'] * $page['bulk_qty'];
 $sale_per_blk = $price_per_blk - $dic_per_blk;
+$old_price = $price_per_blk + round($price_per_blk * ($page['tax'] / 100), 2);
 $sale_per_blk = $sale_per_blk + round($sale_per_blk * ($page['tax'] / 100), 2);
 $percentage = round(($dic_per_blk/$price_per_blk)*100);
 $unit = getUnitText($page['qty_unit']);
@@ -140,7 +141,7 @@ $unit = getUnitText($page['qty_unit']);
                                                 <span class="current-price text-brand">$<?php echo $sale_per_blk; ?></span>
                                                 <span>
                                                     <span class="save-price font-md color3 ml-15"><?php echo $percentage; ?>% Off</span>
-                                                    <span class="old-price font-md ml-15">$<?php echo $price_per_blk; ?></span>
+                                                    <span class="old-price font-md ml-15">$<?php echo $old_price; ?></span>
                                                 </span>
                                             </div>
                                         </div>

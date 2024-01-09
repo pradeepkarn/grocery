@@ -109,6 +109,7 @@ $page = $page->pk($GLOBALS['url_last_param']);
                                 $price_per_blk = $page['price'] * $page['bulk_qty'];
                                 $dic_per_blk = $page['discount_amt'] * $page['bulk_qty'];
                                 $sale_per_blk = $price_per_blk - $dic_per_blk;
+                                $old_price = $price_per_blk + round($price_per_blk * ($page['tax'] / 100), 2);
                                 $sale_per_blk = $sale_per_blk + round($sale_per_blk * ($page['tax'] / 100), 2);
                                 $unit = getUnitText($page['qty_unit']);
                                 ?>
