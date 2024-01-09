@@ -185,7 +185,7 @@ class Dbobjects extends Dbh
         $this->sql = "SELECT * FROM `$this->tableName` WHERE " .implode(" and ", $arr). " ORDER BY `$id` $ord LIMIT 1;";
         $this->qry = "`{$id}` = {$this->show($this->sql)[0][$id]}";
         $assoc_arr = null;
-        return $this->show($this->sql)[0];        
+        return $this->showOne($this->sql);        
     }
 
     public function pk($pk = null)
@@ -195,7 +195,7 @@ class Dbobjects extends Dbh
         $this->sql = "SELECT * FROM `$this->tableName` WHERE `$this->tableName`.`$id` = $pk";
         $this->qry = "`$id` = {$this->show($this->sql)[0][$id]}";
         $pk = null;
-        return $this->show($this->sql)[0];
+        return $this->showOne($this->sql);
     }
     
     
@@ -205,6 +205,15 @@ class Dbobjects extends Dbh
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute();
         $results = $stmt->fetchAll();
+        return $results;
+           
+    }
+    public function showOne($sql)
+    {
+     
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute();
+        $results = $stmt->fetch();
         return $results;
            
     }

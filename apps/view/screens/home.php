@@ -1,7 +1,7 @@
 
     <?php import("apps/view/inc/header.php"); ?>
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="onloadModal" tabindex="-1" aria-labelledby="onloadModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade custom-modal" id="onloadModal" tabindex="-1" aria-labelledby="onloadModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Quick view -->
     <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -91,103 +91,9 @@
             </div>
         </section>
         <!--End hero slider-->
-        <section class="popular-categories section-padding">
-            <div class="container wow animate__animated animate__fadeIn">
-                <div class="section-title">
-                    <div class="title">
-                        <h3>Featured Categories</h3>
-                        <ul class="list-inline nav nav-tabs links">
-                            <li class="list-inline-item nav-item"><a class='nav-link' href='shop-grid-right.html'>Cake & Milk</a></li>
-                            <li class="list-inline-item nav-item"><a class='nav-link' href='shop-grid-right.html'>Coffes & Teas</a></li>
-                            <li class="list-inline-item nav-item"><a class='nav-link active' href='shop-grid-right.html'>Pet Foods</a></li>
-                            <li class="list-inline-item nav-item"><a class='nav-link' href='shop-grid-right.html'>Vegetables</a></li>
-                        </ul>
-                    </div>
-                    <div class="slider-arrow slider-arrow-2 flex-right carausel-10-columns-arrow" id="carausel-10-columns-arrows"></div>
-                </div>
-                <div class="carausel-10-columns-cover position-relative">
-                    <div class="carausel-10-columns" id="carausel-10-columns">
-                        <div class="card-2 bg-9 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-13.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Cake & Milk</a></h6>
-                            <span>26 items</span>
-                        </div>
-                        <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-12.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Oganic Kiwi</a></h6>
-                            <span>28 items</span>
-                        </div>
-                        <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-11.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Peach</a></h6>
-                            <span>14 items</span>
-                        </div>
-                        <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-9.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Red Apple</a></h6>
-                            <span>54 items</span>
-                        </div>
-                        <div class="card-2 bg-13 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-3.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Snack</a></h6>
-                            <span>56 items</span>
-                        </div>
-                        <div class="card-2 bg-14 wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-1.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Vegetables</a></h6>
-                            <span>72 items</span>
-                        </div>
-                        <div class="card-2 bg-15 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-2.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Strawberry</a></h6>
-                            <span>36 items</span>
-                        </div>
-                        <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".8s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-4.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Black plum</a></h6>
-                            <span>123 items</span>
-                        </div>
-                        <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-5.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Custard apple</a></h6>
-                            <span>34 items</span>
-                        </div>
-                        <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-14.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Coffe & Tea</a></h6>
-                            <span>89 items</span>
-                        </div>
-                        <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay="0s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href='shop-grid-right.html'><img src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/cat-15.png" alt="" /></a>
-                            </figure>
-                            <h6><a href='shop-grid-right.html'>Headphone</a></h6>
-                            <span>87 items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php 
+        import("apps/view/components/home/categories.php");
+        ?>
         <!--End category slider-->
         <section class="banners mb-25">
             <div class="container">
@@ -261,50 +167,9 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
                         <div class="row product-grid-4">
-                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
-                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
-                                    <div class="product-img-action-wrap">
-                                        <div class="product-img product-img-zoom">
-                                            <a href='/<?php echo home; ?>/shop-product-right'>
-                                                <img class="default-img" src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/product-1-1.jpg" alt="" />
-                                                <img class="hover-img" src="/<?php echo STATIC_URL; ?>/assets/imgs/shop/product-1-2.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-action-1">
-                                            <a aria-label='Add To Wishlist' class='action-btn' href='shop-wishlist.html'><i class="fi-rs-heart"></i></a>
-                                            <a aria-label='Compare' class='action-btn' href='shop-compare.html'><i class="fi-rs-shuffle"></i></a>
-                                            <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
-                                        </div>
-                                        <div class="product-badges product-badges-position product-badges-mrg">
-                                            <span class="hot">Hot</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-content-wrap">
-                                        <div class="product-category">
-                                            <a href='shop-grid-right.html'>Snack</a>
-                                        </div>
-                                        <h2><a href='/<?php echo home; ?>/shop-product-right'>Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
-                                        <div class="product-rate-cover">
-                                            <div class="product-rate d-inline-block">
-                                                <div class="product-rating" style="width: 90%"></div>
-                                            </div>
-                                            <span class="font-small ml-5 text-muted"> (4.0)</span>
-                                        </div>
-                                        <div>
-                                            <span class="font-small text-muted">By <a href='vendor-details-1.html'>NestFood</a></span>
-                                        </div>
-                                        <div class="product-card-bottom">
-                                            <div class="product-price">
-                                                <span>$28.85</span>
-                                                <span class="old-price">$32.8</span>
-                                            </div>
-                                            <div class="add-cart">
-                                                <a class='add' href='shop-cart.html'><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                          <?php 
+                          import("apps/view/components/home/myTabContent.php");
+                          ?>
                             <!--end product card-->
                             <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
                                 <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
